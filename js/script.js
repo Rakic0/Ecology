@@ -8,8 +8,17 @@ function elScroll(el) {
 
 const menu = document.querySelector(".hamburger");
 const navOpen = document.querySelector(".mobile-nav");
+const scroll = document.querySelector(".scroll-link");
 
-menu.addEventListener("click", function () {
+function toggleMenu() {
   menu.classList.toggle("open");
   navOpen.classList.toggle("nav-open");
+}
+
+menu.addEventListener("click", function () {
+  toggleMenu();
+});
+
+scroll.addEventListener("click", function () {
+  toggleMenu();
 });
