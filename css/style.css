@@ -1,0 +1,91 @@
+/* MAIN */
+
+.main {
+  color: #444;
+  margin-bottom: 10rem;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+  margin-top: 10rem;
+}
+
+.page-title {
+  font-size: 6rem;
+  color: inherit;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  max-width: 50%;
+  font-size: 1.6rem;
+  color: inherit;
+  line-height: 2;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.img-text-box {
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.intruduction-img,
+.klima-img {
+  background-image: url(../img/eko/intruduction-img.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.klima-img {
+  background-image: url(../img/eko/klima.webp) !important;
+}
+
+.zag {
+  background-image: url(../img/eko/zagadjenje.webp) !important;
+}
+
+.intruduction-text {
+  padding: 5rem;
+}
+
+.citat {
+  font-size: 1.6rem;
+  color: inherit;
+  line-height: 1.5;
+}
+.citat span {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.img {
+  width: 100%;
+}
+
+/* ARTICLE */
+
+.article {
+  margin-top: 10rem;
+}
+
+.article > .container {
+  max-width: 70rem;
+}
+
+.article-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.article-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: inherit;
+  margin-bottom: 2rem;
+}

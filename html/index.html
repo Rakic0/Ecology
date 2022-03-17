@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/index_style.css" />
+    <link rel="stylesheet" href="../css/queries/index_queries.css" />
+    <link rel="icon" type="image/x-icon" href="../img/logo.webp" />
+
+    <title>Eco</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-box" onclick="elScroll('top')">
+        <img src="../img/logo.webp" alt="logo" class="logo-img" />
+        <p class="logo-text">Eco</p>
+      </div>
+      <div class="hamburger">
+        <span class="line"></span>
+      </div>
+      <div class="mobile-nav">
+        <div class="logo-box" onclick="location.href='index.html'">
+          <img src="../img/logo.webp" alt="logo" class="logo-img" />
+          <p class="logo-text">Eco</p>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="ekologija.html" class="link nav-link">Ekologija</a>
+          </li>
+          <li class="nav-item">
+            <a href="klima.html" class="link nav-link">Klimatkse Promene</a>
+          </li>
+          <li class="nav-item">
+            <a href="zagadjenje.html" class="link nav-link">Zagađenje</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero-section">
+        <div class="box">
+          <h1 class="hero-title">
+            “Doktor leči, priroda ozdravi.”<br />
+            <span>– latinska izreka</span>
+          </h1>
+          <p class="hero-sub">
+            Saznaj kako da zaštitis prirodu <i class="bi bi-arrow-right"></i>
+          </p>
+          <a onclick="elScroll('find')" class="hero-sub btn tab-btn">OVDE!</a>
+        </div>
+      </section>
+
+      <section class="find" id="find">
+        <div class="flex">
+          <div class="col eko">
+            <a href="ekologija.html" class="btn hero-sub">Ekologija</a>
+          </div>
+          <div class="col klima">
+            <a href="klima.html" class="btn hero-sub">Klimatke promene</a>
+          </div>
+          <div class="col zagadjenje">
+            <a href="zagadjenje.html" class="btn hero-sub">Zagađenje</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-col">
+        <div class="logo-box" onclick="location.href='index.html'">
+          <img src="../img/logo.webp" alt="" class="footer-logo" />
+          <span class="logo-text">Eco</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="ekologija.html" class="link nav-link">Ekologija</a>
+          </li>
+          <li class="nav-item">
+            <a href="klima.html" class="link nav-link">Klimatkse Promene</a>
+          </li>
+          <li class="nav-item">
+            <a href="zagadjenje.html" class="link nav-link">Zagađenje</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Socials</p>
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/rakic012"
+            target="_blank"
+            class="social-link"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.github.com/Rakic0"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

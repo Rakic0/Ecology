@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  height: 6rem;
+  padding: 0 3.6rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #f5f5f5;
+  color: #444;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.logo-text {
+  font-family: "Rubik", serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #414143;
+}
+
+/* NAVIGATION */
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link::after,
+.nav-link_b::after,
+.underline::after {
+  transition: all 0.3s;
+  content: " ";
+  height: 2px;
+  width: 0;
+  background-color: #81b29a;
+
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.b::after {
+  background-color: #227c9d !important;
+}
+
+.r::after {
+  background-color: #e07a5f !important;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  transition: 0.3s;
+
+  position: relative;
+  font-size: 2rem;
+}
+
+.nav-link:hover::after {
+  transition: 0.3s;
+  width: 100%;
+  color: #444;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* FOOTER */
+
+.footer {
+  color: #f5f5f5;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #222;
+
+  padding: 5rem 3.6rem;
+}
+
+.footer-col {
+  white-space: nowrap;
+}
+
+.footer-col:nth-child(3) {
+  justify-self: end;
+}
+
+.footer .logo-box {
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  width: 10%;
+}
+
+.footer .logo-text {
+  color: #f5f5f5;
+  font-size: 6rem;
+}
+
+.footer .nav-link:hover,
+.nav-link:active {
+  color: #f7f7f7;
+}
+
+.footer-col-title {
+  font-size: 3rem;
+}
+
+.social-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.social-link:first-child {
+  margin-right: 1rem;
+}
+
+/* OTHER GENERAL */
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.6rem;
+}
+
+.link,
+.link:link,
+.link:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  transition: all 0.3s;
+  color: #555;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.underline::after {
+  width: 100% !important;
+  height: 3.5px !important;
+}
+
+.underline {
+  position: relative;
+  width: 100%;
+}
